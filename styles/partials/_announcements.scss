@@ -1,0 +1,47 @@
+.announcements{
+    background: $charCoal /*compliments to Derek for showing me this */
+}
+
+
+.topRow,
+.bottomRow{
+    display: flex;
+    justify-content: space-between;
+    .left{
+        flex-basis: 50%;
+    }
+    .right{
+        flex-basis: 50%;
+    }
+}
+
+.topRow{
+    position: relative;
+    top: -3vw;
+    .right{
+        padding: 5% 10%;
+    }
+    .left{
+        img{
+            box-shadow: 20px 20px $marigold;
+        }
+    }
+}
+
+.bottomRow{
+    position: relative;
+    bottom: -3vw;
+    .left{
+        padding: 5% 10%;
+        text-align: right;
+    }
+    .right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        img{
+            box-shadow: -20px 20px $marigold;
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+*{
+    // border: 1px solid white;
+}
+
+.newAdventures{
+    padding: 200px 0 100px 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-basis: 75%;
+        p{
+            padding-right: 5%;
+        }
+    }
+    .right{
+        flex-basis: 25%;
+        img{
+            width: 100%;
+            box-shadow: -20px 20px $mudGreen;
+        }
+    }
+}

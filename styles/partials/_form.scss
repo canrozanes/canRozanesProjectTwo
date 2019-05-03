@@ -1,0 +1,48 @@
+.formTop{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    [type="email"]{
+        margin-left: 5%;
+        width: calc(50% - 5%);
+        border: none;
+        border-bottom: 2px solid $marigold;
+    }
+    [type="text"]{
+        width: 50%;
+        border: none;
+        border-bottom: 2px solid $marigold;
+    }
+}
+
+form [placeholder]{
+        color: $iceBlue;
+        line-height: 32px;
+        letter-spacing: 2px;
+        font-size: 20px;
+        padding: 10px 10px 10px 20px;
+    }
+
+form{
+    width: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input,
+textarea{
+    background: $camoGreen;
+}
+
+textarea{
+    border: 2px solid $marigold;
+    width: 100%;
+    margin: 20px 0;
+}
+
+[type="submit"]{
+    width: 100%;
+    color: $iceBlue;
+    border: none;
+}

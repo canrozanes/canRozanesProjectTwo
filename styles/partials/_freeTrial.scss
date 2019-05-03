@@ -1,0 +1,19 @@
+.freeTrial{
+    background: url(../assets/banner-image.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.freeTrial{
+    padding: 100px 0;
+    h3{
+        margin-top: 35%;
+    }
+}
+.freeTrial>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}

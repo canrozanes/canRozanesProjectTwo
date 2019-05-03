@@ -1,0 +1,95 @@
+html{
+    font-size: 125%;
+}
+body{
+    font-size: 1.6rem;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1600px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+{
+    font-family: $headerFont;
+    color: $marigold;
+    margin: 0;
+}
+
+h1{
+    font-size: 115px;
+}
+
+h2{
+    font-size: 105px;
+    letter-spacing: 10.9px;
+}
+
+h3{
+    font-size: 45px;
+    letter-spacing: 4.9px;
+}
+
+h4{
+    font-size: 41.5px;
+    letter-spacing: 4.3px;
+}
+
+h5{
+    font-size: 40px;
+}
+h6{
+    font-family: $headerFont;
+    color: $iceBlue;
+    margin: 0;
+    font-size: 2rem;
+}
+
+p{
+    font-family: $baseFont;
+    font-size: 1rem;
+    color: $iceBlue;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+a{
+    font-family: $baseFont;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: $iceBlue;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+main{
+    background-color:$camoGreen;
+}
+
+textarea {
+  resize: none;
+}
+
+.greenBox{
+    background-color: $mudGreen;
+    font-family: $headerFont;
+    font-size: 1.25rem;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    line-height: 25.5px;
+}
