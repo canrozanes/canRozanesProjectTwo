@@ -2,18 +2,16 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 25px;
-    [type="email"]{
-        margin-left: 5%;
-        width: calc(50% - 2.5%);
-        border: none;
-        border-bottom: 2px solid $marigold;
-    }
+    [type="email"],
     [type="text"]{
         width: calc(50% - 2.5%);
         border: none;
-        border-bottom: 2px solid $marigold;
+        border-bottom: 2px solid $marigold
+        }
     }
-}
+    [type="email"]{
+        margin-left: 5%;
+    }
 
 form [placeholder]{
         color: $iceBlue;
@@ -34,6 +32,7 @@ form{
 input,
 textarea{
     background: $camoGreen;
+
 }
 
 textarea{
@@ -46,6 +45,17 @@ textarea{
     width: 100%;
     color: $iceBlue;
     border: none;
+}
+
+.formTop [type="email"], 
+.formTop [type="text"],
+textarea{
+    &:active{
+        border: 1px solid red;
+    }
+    &:focus{
+        border: 1px solid red;
+    }
 }
 
 @media (max-width: 1200px){

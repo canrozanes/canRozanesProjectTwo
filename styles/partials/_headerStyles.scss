@@ -7,7 +7,6 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
 }
 
 header > div{
@@ -51,7 +50,7 @@ header > div{
 
 // index.html specific header styles
 header.index{
-    background-image: url(../assets/home-image-1.jpg);
+    background-image: url(../assets/homeImage1.jpg);
     background-position: left center;
     height: $headerHeight;
     min-height: 400px;
@@ -89,7 +88,7 @@ h1{
 header.blog,
 header.contact{
     height: $headerHeight;
-    min-height: 600px;
+    min-height: 400px;
     &>div{
         height: 100%;
         display: flex;
@@ -104,7 +103,7 @@ header.contact{
 
 // blog.html specific header styles
 header.blog{
-    background-image: url(../assets/blog-image-1.jpg);
+    background-image: url(../assets/blogBanner.jpg);
     background-position: right center;
 }
 // end of blog specific header styles
@@ -202,9 +201,3 @@ header.contact{
         font-size: 55px;
     }
 }
-
-
-
-// *{
-//     border: 1px solid white;
-// }

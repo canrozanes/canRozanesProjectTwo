@@ -31,11 +31,12 @@
 
 .bottomRow{
     align-items: flex-end;
-    // position: relative;
-    // bottom: -3vw;
     .left{
         padding: 5% 10%;
         text-align: right;
+        p{
+            text-align: left;
+        }
     }
     .right{
         display: flex;

@@ -4,17 +4,17 @@
     &>div{
         display: flex;
         justify-content: space-between;
-        .imageContainer{
-            padding: 0 2%;
-            &:nth-child(3){
-                padding-right: 0;
-            }
-            &:nth-child(1){
-                padding-left: 0;
-            }
-        }
     }
 }
+.gallery .imageContainer{
+    padding: 0 2%;
+    &:nth-child(3){
+        padding-right: 0;
+    }
+    &:nth-child(1){
+        padding-left: 0;
+        }
+    }
 
 @media (max-width: 650px){
     .gallery > div{

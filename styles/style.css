@@ -259,10 +259,7 @@ header {
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch; }
+  justify-content: space-between; }
 
 header > div {
   width: 100%; }
@@ -303,7 +300,7 @@ header > div {
   position: absolute; }
 
 header.index {
-  background-image: url(../assets/home-image-1.jpg);
+  background-image: url(../assets/homeImage1.jpg);
   background-position: left center;
   height: 80vh;
   min-height: 400px; }
@@ -340,7 +337,7 @@ h1 {
 header.blog,
 header.contact {
   height: 80vh;
-  min-height: 600px; }
+  min-height: 400px; }
   header.blog > div,
   header.contact > div {
     height: 100%;
@@ -359,7 +356,7 @@ header.contact {
     margin-bottom: 15%; }
 
 header.blog {
-  background-image: url(../assets/blog-image-1.jpg);
+  background-image: url(../assets/blogBanner.jpg);
   background-position: right center; }
 
 header.contact {
@@ -518,12 +515,13 @@ header.contact {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .gallery > div .imageContainer {
-      padding: 0 2%; }
-      .gallery > div .imageContainer:nth-child(3) {
-        padding-right: 0; }
-      .gallery > div .imageContainer:nth-child(1) {
-        padding-left: 0; }
+
+.gallery .imageContainer {
+  padding: 0 2%; }
+  .gallery .imageContainer:nth-child(3) {
+    padding-right: 0; }
+  .gallery .imageContainer:nth-child(1) {
+    padding-left: 0; }
 
 @media (max-width: 650px) {
   .gallery > div {
@@ -540,30 +538,29 @@ header.contact {
     .gallery > div .imageContainer {
       padding: 0 0 20px 0; } }
 
-.extraLinks {
+.information {
   padding: 100px 0; }
+  .information p {
+    margin-left: calc(50px + 2%); }
+  .information > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
 
-.extraLinks p {
-  margin-left: calc(50px + 2%); }
+.info-item {
+  width: 50%;
+  padding: 10px; }
 
-.extraLinks > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  .extraLinks > div .link {
-    width: 50%;
-    padding: 10px; }
-
-.extraLinks .link > div {
+.info-item > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .extraLinks .link > div h5 {
+  .info-item > div h5 {
     margin: 0 2%; }
 
 .iconContainer {
@@ -586,7 +583,7 @@ header.contact {
     color: white; }
 
 @media (max-width: 1024px) {
-  .extraLinks > div .link {
+  .info-item {
     width: 100%; }
   h5 {
     font-size: 35px; } }
@@ -630,6 +627,8 @@ header.contact {
   .bottomRow .left {
     padding: 5% 10%;
     text-align: right; }
+    .bottomRow .left p {
+      text-align: left; }
   .bottomRow .right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -713,7 +712,7 @@ header.contact {
       text-align: center; } }
 
 .bcgContainer {
-  background: url(../assets/banner-image.jpg);
+  background: url(../assets/bannerImage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 35vw;
@@ -896,15 +895,14 @@ aside.blog {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 25px; }
-  .formTop [type="email"] {
-    margin-left: 5%;
-    width: calc(50% - 2.5%);
-    border: none;
-    border-bottom: 2px solid #ffc600; }
+  .formTop [type="email"],
   .formTop [type="text"] {
     width: calc(50% - 2.5%);
     border: none;
     border-bottom: 2px solid #ffc600; }
+
+[type="email"] {
+  margin-left: 5%; }
 
 form [placeholder] {
   color: #fafffe;
@@ -933,6 +931,16 @@ textarea {
   width: 100%;
   color: #fafffe;
   border: none; }
+
+.formTop [type="email"]:active,
+.formTop [type="text"]:active,
+textarea:active {
+  border: 1px solid red; }
+
+.formTop [type="email"]:focus,
+.formTop [type="text"]:focus,
+textarea:focus {
+  border: 1px solid red; }
 
 @media (max-width: 1200px) {
   .formTop {
@@ -1015,3 +1023,13 @@ main.contact {
   main.contact form {
     -webkit-box-shadow: 0 0 #ffc600;
     box-shadow: 0 0 #ffc600; } }
+
+a:hover {
+  color: grey; }
+
+.greenBox:hover {
+  background-color: darkslategrey;
+  color: #fafffe; }
+
+main.contact i:hover {
+  color: grey; }

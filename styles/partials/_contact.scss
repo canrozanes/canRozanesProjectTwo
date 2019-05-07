@@ -22,7 +22,6 @@ main.contact{
     ul{
     width: 100%;
     display: flex;
-    // justify-content: space-around;
         &+p+p{
                 margin-bottom: 0;
             }
@@ -44,10 +43,6 @@ main.contact{
         padding: 10% 10%;
         box-shadow: 20px 20px $marigold;
     }
-}
-
-@media (max-width: 900px){
-
 }
 
 @media (max-width: 900px){
