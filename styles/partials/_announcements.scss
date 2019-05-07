@@ -1,5 +1,5 @@
 .announcements{
-    background: $charCoal /*compliments to Derek for showing me this */
+    background: $charCoal
 }
 
 
@@ -16,8 +16,9 @@
 }
 
 .topRow{
+    align-items: flex-start;
     position: relative;
-    top: -3vw;
+    top: -20px;
     .right{
         padding: 5% 10%;
     }
@@ -29,8 +30,9 @@
 }
 
 .bottomRow{
-    position: relative;
-    bottom: -3vw;
+    align-items: flex-end;
+    // position: relative;
+    // bottom: -3vw;
     .left{
         padding: 5% 10%;
         text-align: right;
@@ -45,3 +47,59 @@
     }
 }
 
+
+@media(max-width: 1200px){
+    .topRow .left,
+    .bottomRow .right{
+        flex-basis: 40%;
+    }
+    .topRow .right,
+    .bottomRow .left{
+        flex-basis: 60%;
+    }
+}
+
+@media(max-width: 900px){
+    .announcements{
+        padding-top: 50px;
+    }
+    .topRow{
+        top: 0;
+    }
+
+    .topRow .right,
+    .bottomRow .left{
+        padding: 1% 5%;
+    }
+    .topRow{
+        flex-direction: column;
+        align-items: center;
+        .left{
+            padding: 0;
+            img{
+                box-shadow: none;
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .bottomRow{
+        flex-direction: column-reverse;
+        align-items: center;
+        .right{
+            padding: 0;
+            img{
+                box-shadow: none;
+            }
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+main.contact>div{
+    display: flex;
+    justify-content: space-between;
+    .left{
+        flex-basis: calc(75% - 10%);
+        margin-right: 10%;
+        margin-top: -15%;
+    }
+    .right{
+        flex-basis: 25%;
+        p:last-child{
+            margin-top:0;
+        }
+    }
+    span{
+        display: block;
+    }
+}
+
+main.contact{
+    padding: 100px 0;
+    ul{
+    width: 100%;
+    display: flex;
+    // justify-content: space-around;
+        &+p+p{
+                margin-bottom: 0;
+            }
+    }
+    li{
+        margin-right: 10%;
+        i{
+        color: $marigold;
+    }
+    }
+    form,
+    input[type="text"],
+    input[type="email"],
+    textarea
+    {
+        background: $charCoal;
+    }
+    form{
+        padding: 10% 10%;
+        box-shadow: 20px 20px $marigold;
+    }
+}
+
+@media (max-width: 900px){
+
+}
+
+@media (max-width: 900px){
+    main.contact>div{
+        flex-direction: column;
+        align-items: center;
+        .left{
+            margin-right: 0;
+            margin-top: 0;
+        }
+        .right{
+            .social{
+                justify-content: center;
+            }
+        }
+    }
+    main.contact{
+        padding: 50px 0;
+    }
+    
+}
+
+@media (max-width: 650px){
+    main.contact form{
+        box-shadow: 0 0 $marigold;
+    }
+}

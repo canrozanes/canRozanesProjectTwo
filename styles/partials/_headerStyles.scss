@@ -4,6 +4,14 @@
 header{
     background-repeat: no-repeat;
     background-size: cover;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+header > div{
+    width: 100%;
 }
 
 .headerTop{
@@ -14,6 +22,7 @@ header{
         margin: 25px 0;
     }
 }
+
 
 .headerTop .nav{
     display: flex;
@@ -43,34 +52,37 @@ header{
 // index.html specific header styles
 header.index{
     background-image: url(../assets/home-image-1.jpg);
+    background-position: left center;
     height: $headerHeight;
-    min-height: 600px;
-    
+    min-height: 400px;
 }
 
 .hero{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
     position: relative;
-    top: 15%;
+    top: 5%;
     .left{
         flex-basis: 40%;
+        align-self: flex-end;
     }
     .right{
         flex-basis: 60%;
+        margin-left: 50px;
     }
-    h1{
-        text-align: left;
-        margin: 0;
+}
+h1{
+    text-align: left;
+    
     }
-    p{
+.hero p{
         font-size: 50px;
         font-family: $baseFont;
         margin: 0;
         padding: 0 2%;
-    }
 }
+
 // end of index specific header styles
 
 //styling for non-index pages:
@@ -83,16 +95,17 @@ header.contact{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        h2{
+        }
+    h2{
             margin-bottom: 15%;
         }
-    }
 }
 
 
 // blog.html specific header styles
 header.blog{
     background-image: url(../assets/blog-image-1.jpg);
+    background-position: right center;
 }
 // end of blog specific header styles
 
@@ -102,3 +115,96 @@ header.contact{
 }
 // end of blog specific header styles
 
+
+
+@media (max-width:1300px){
+    h1{
+        font-size:80px;
+    }
+    .hero p {
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 75px;
+        margin: 10% 0;
+    }
+}
+
+@media (max-width: 1000px){
+    .headerTop .nav li{
+        margin: 0 15px;
+    }
+
+    header.blog,
+    header.contact{
+        &>div{
+            justify-content: flex-start;
+        }
+    }  
+} 
+
+@media (max-width: 900px){
+    .headerTop .nav,
+    .headerTop h4{
+        display: none;
+        position: absolute;
+    }
+    .headerTop{
+        justify-content: flex-end;
+    }
+    .burger{
+        display: block;
+        position: static;
+        margin: 5% 0;
+    }
+    header.index{
+        justify-content: flex-start;
+    }
+    header .hero{
+        display: block;
+        .left{
+            display: none;
+            position: absolute;
+        }
+        .right{
+            flex-basis: 100%;
+            align-self: left;
+            margin: 0 5%;
+            h1{
+                padding-bottom: 10%;
+            }
+        }
+    }
+    header.index,
+    header.blog,
+    header.contact{
+        height: 60vh;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 460px){
+    header.index{
+        background-position: right center;
+    }
+    h1{
+        font-size: 60px;
+        line-height: 50px;
+    }
+
+    .hero p {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    h2{
+        font-size: 55px;
+    }
+}
+
+
+
+// *{
+//     border: 1px solid white;
+// }

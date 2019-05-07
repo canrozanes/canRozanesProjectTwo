@@ -1,5 +1,5 @@
 .extraLinks {
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .extraLinks{
@@ -36,4 +36,15 @@
         color: white;
     }
 
+}
+
+@media(max-width: 1024px){
+    .extraLinks>div{
+            .link{
+                width: 100%;
+            }
+        }
+    h5{
+        font-size: 35px;
+    }
 }

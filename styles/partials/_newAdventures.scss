@@ -1,14 +1,11 @@
-*{
-    // border: 1px solid white;
-}
-
 .newAdventures{
-    padding: 200px 0 100px 0;
+    padding: 100px 0;
 }
 
 .container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .left{
         display: flex;
         flex-direction: column;
@@ -24,6 +21,48 @@
         img{
             width: 100%;
             box-shadow: -20px 20px $mudGreen;
+        }
+    }
+}
+
+
+@media (max-width: 1400px){
+    .newAdventures{
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 1200px){
+    .container{
+        .left{
+            flex-basis: 60%;
+        }
+        .right{
+            flex-basis: 40%;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        a{
+            margin: 0 auto;
+        }
+        .right{
+            margin-bottom: 50px;
+            img{
+                box-shadow: none;
+            }
+        }
+        .left{
+            align-items: center;
+            p{
+                padding-right: 0;
+                text-align: center;
+            }
         }
     }
 }

@@ -6,6 +6,26 @@
         justify-content: space-between;
         .imageContainer{
             padding: 0 2%;
+            &:nth-child(3){
+                padding-right: 0;
+            }
+            &:nth-child(1){
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .gallery > div{
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 70%;
+            margin: 0 auto;
+        }
+        .imageContainer{
+            padding: 0 0 20px 0;
         }
     }
 }
