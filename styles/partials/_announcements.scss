@@ -75,6 +75,7 @@
     .topRow{
         flex-direction: column;
         align-items: center;
+        padding: 25px 0;
         .left{
             padding: 0;
             img{
@@ -90,6 +91,7 @@
     .bottomRow{
         flex-direction: column-reverse;
         align-items: center;
+        padding: 25px 0;
         .right{
             padding: 0;
             img{
